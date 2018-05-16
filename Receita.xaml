@@ -1,0 +1,317 @@
+<Window x:Class="usinaConcreto.Pages.Receita"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:usinaConcreto.Pages"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Style="{StaticResource estiloPadrao}"
+        xmlns:Controls="clr-namespace:usinaConcreto.Controles">
+    <Window.Resources>
+        <SolidColorBrush x:Key="Brush1" Color="#FF2E00FF"/>
+    </Window.Resources>
+
+    <!-- Configuração Background -->
+    <Window.Background>
+        <ImageBrush ImageSource="/Img/fundoLiso.png"/>
+    </Window.Background>
+
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!-- Label Entrada -->
+        <Label Content="Receitas" Style="{StaticResource labelCabecalho}" Width="670" Margin="10,2,0,0" Height="70">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+
+        <!-- Menu Navegação -->
+        <Controls:MenuControl></Controls:MenuControl>
+
+        <!-- Agua -->
+        <Label Content="AGUA"   Height="35" Width="107" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="59,79,1200,654" FontWeight="Bold"/>
+        <Label Content="Peso ..............................................................."   Height="36" Width="144" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="22,149,1200,583"/>
+        <Label Content="Antecipação ........................."   Height="35" Width="219" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="22,191,1125,542"/>
+        <Label Content="Retardo Entrada ................."   Height="35" Width="219" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="22,226,1125,507"/>
+        <TextBox x:Name="campo_01" Style="{StaticResource textBoxReceita}" Text="0" VerticalAlignment="Center" Margin="171,146,1095,582" IsEnabled="True"/>
+        <TextBox x:Name="campo_02" Style="{StaticResource textBoxReceita}" Text="0" VerticalAlignment="Center" Margin="276,145,990,583" IsEnabled="true"/>
+
+        <TextBox x:Name="campo_03"  Text="0" VerticalAlignment="Center" Margin="381,145,885,583" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_04"  Text="0" VerticalAlignment="Center" Margin="171,188,1095,540" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_05"  Text="0" VerticalAlignment="Center" Margin="171,230,1095,498" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_44"  Text="0" VerticalAlignment="Center" Margin="381,230,885,498" IsEnabled="False" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_45"  Text="0" VerticalAlignment="Center" Margin="276,229,990,499" IsEnabled="False" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_46"  Text="0" VerticalAlignment="Center" Margin="381,187,885,541" IsEnabled="False" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_47"  Text="0" VerticalAlignment="Center" Margin="276,187,990,541" IsEnabled="False" Style="{StaticResource textBoxReceita}"/>
+
+
+
+
+
+
+
+
+
+        <!-- CIMENTO -->
+        <Label Content="CIMENTO"   Height="35" Width="107" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="59,349,1200,384" FontWeight="Bold"/>
+        <Label Content="Peso................................................................................."   Height="36" Width="285" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="22,421,1059,311"/>
+        <Label Content="Antecipação..................................................................."   Height="35" Width="285" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="22,464,1059,269"/>
+        <Label Content="Retardo Entrada.........................................................."   Height="36" Width="285" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="22,505,1059,227"/>
+        <Label Content="Tempo Vibrador OFF......................................"   Height="34" Width="285" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="22,549,1059,185"/>
+        <Label Content="Tempo Vibrador ON.............................................."   Height="34" Width="285" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="22,593,1059,141"/>
+        <TextBox x:Name="campo_06"  Text="0" VerticalAlignment="Center" Margin="171,419,1095,309" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_07"  Text="0" VerticalAlignment="Center" Margin="276,419,990,309" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_08" Text="0" VerticalAlignment="Center" Margin="381,419,885,309" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_09" Text="0" VerticalAlignment="Center" Margin="171,461,1095,267" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_10" Text="0" VerticalAlignment="Center" Margin="171,503,1095,225" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_11"  Text="0" VerticalAlignment="Center" Margin="171,546,1095,182" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_12" Text="0" VerticalAlignment="Center" Margin="171,590,1095,138" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_48"  Text="0" VerticalAlignment="Center" Margin="381,590,885,138" IsEnabled="False" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_49"  Text="0" VerticalAlignment="Center" Margin="276,590,990,138"  IsEnabled="False" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_50"  Text="0" VerticalAlignment="Center" Margin="381,546,885,182" IsEnabled="False" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_51"  Text="0" VerticalAlignment="Center" Margin="276,546,990,182" IsEnabled="False" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_52"  Text="0" VerticalAlignment="Center" Margin="381,503,885,225" IsEnabled="False"  Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_53"  Text="0" VerticalAlignment="Center" Margin="276,503,990,225" IsEnabled="False" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_54"  Text="0" VerticalAlignment="Center" Margin="381,461,885,267" IsEnabled="False" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_55"  Text="0" VerticalAlignment="Center" Margin="276,461,990,267" IsEnabled="False" Style="{StaticResource textBoxReceita}"/>
+
+
+
+
+
+
+
+
+
+
+        <!-- ADITIVOS -->
+        <Label Content="ADITIVOS"   Height="35" Width="140" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="519,76,707,657" FontWeight="Bold"/>
+        <Label Content="Aditivo 01.................................................."   Height="34" Width="285" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="514,145,567,589"/>
+        <Label Content="Antecipação Aditivo 01........................."   Height="36" Width="285" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="515,189,566,543"/>
+        <Label Content="Aditivo 02.................................................."   Height="36" Width="285" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="515,233,566,499"/>
+        <Label Content="Antecipação Aditivo 02.........................."   Height="36" Width="285" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="514,277,567,455"/>
+        <Label Content="Aditivo 03.................................................."   Height="36" Width="285" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="515,321,566,411"/>
+        <Label Content="Antecipação Aditivo 03.............................."   Height="34" Width="285" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="516,364,565,370"/>
+        <TextBox x:Name="campo_13" Text="0" VerticalAlignment="Center" Margin="659,142,607,586" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_14"  Text="0" VerticalAlignment="Center" Margin="871,142,395,586" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_15" Text="0" VerticalAlignment="Center" Margin="765,142,501,586" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_16"  Text="0" VerticalAlignment="Center" Margin="659,187,607,541" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_17"  Text="0" VerticalAlignment="Center" Margin="871,231,395,497" Style="{StaticResource textBoxReceita}" Height="40"/>
+        <TextBox x:Name="campo_18" Text="0" VerticalAlignment="Center" Margin="765,231,501,497" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_19"  Text="0" VerticalAlignment="Center" Margin="659,231,607,497" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_20"  Text="0" VerticalAlignment="Center" Margin="871,275,395,453" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_21" Text="0" VerticalAlignment="Center" Margin="659,275,607,453" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_22"  Text="0" VerticalAlignment="Center" Margin="871,361,395,367" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_23"  Text="0" VerticalAlignment="Center" Margin="659,319,607,409" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_24"  Text="0" VerticalAlignment="Center" Margin="659,361,607,367" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_25"  Text="0" VerticalAlignment="Center" Margin="871,187,395,541" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_26"  Text="0" VerticalAlignment="Center" Margin="765,319,501,409" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_56"  Text="0" VerticalAlignment="Center" Margin="766,187,500,541" IsEnabled="False" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_57"  Text="0" VerticalAlignment="Center" Margin="766,275,500,453" IsEnabled="False" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_58"  Text="0" VerticalAlignment="Center" Margin="871,319,395,409" IsEnabled="False" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_59"  Text="0" VerticalAlignment="Center" Margin="766,361,500,367" IsEnabled="False" Style="{StaticResource textBoxReceita}"/>
+
+
+
+
+
+
+
+
+
+        <!-- SILOS -->
+        <Label Content="SILOS"   Height="35" Width="140" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="519,396,707,337" FontWeight="Bold"/>
+        <Label Content="Silo 01.........................................................."   Height="36" Width="285" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="517,419,564,313"/>
+        <Label Content="Antecipação Silo 01....................................."   Height="34" Width="285" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="519,471,562,263"/>
+        <Label Content="Silo 02............................................................."   Height="34" Width="285" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="520,510,561,224"/>
+        <Label Content="Antecipação Silo 02....................................."   Height="36" Width="285" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="521,556,560,176"/>
+        <Label Content="Tempo Vibrador Silo 02......................."   Height="34" Width="285" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="519,602,562,132"/>
+        <Label Content="Silo 03 .............................................................."   Height="34" Width="285" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="522,648,559,86"/>
+        <Label Content="Antecipação Silo 03 ................................"   Height="36" Width="285" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="522,692,559,40"/>
+        <TextBox x:Name="campo_27" Text="0" VerticalAlignment="Center" Margin="871,417,395,311" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_28"  Text="0" VerticalAlignment="Center" Margin="765,417,501,311" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_29"  Text="0" VerticalAlignment="Center" Margin="659,417,607,311" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_30" Text="0" VerticalAlignment="Center" Margin="871,507,395,221" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_31"  Text="0" VerticalAlignment="Center" Margin="871,461,395,267" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_32"  Text="0" VerticalAlignment="Center" Margin="765,461,501,267" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_33"  Text="0" VerticalAlignment="Center" Margin="659,461,607,267" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_34"  Text="0" VerticalAlignment="Center" Margin="765,507,501,221" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_35" Text="0" VerticalAlignment="Center" Margin="659,507,607,221" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_36"  Text="0" VerticalAlignment="Center" Margin="659,599,607,129" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_37"  Text="0" VerticalAlignment="Center" Margin="659,645,607,83" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_38" Text="0" VerticalAlignment="Center" Margin="659,554,607,174" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_39"  Text="0" VerticalAlignment="Center" Margin="659,690,607,38" Style="{StaticResource textBoxReceita}" />
+        <TextBox x:Name="campo_60"  Text="0" VerticalAlignment="Center" Margin="766,553,500,175" IsEnabled="False" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_61"  Text="0" VerticalAlignment="Center" Margin="871,553,395,175" IsEnabled="False" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_62"  Text="0" VerticalAlignment="Center" Margin="766,599,500,129" IsEnabled="False" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_63"  Text="0" VerticalAlignment="Center" Margin="871,599,395,129" IsEnabled="False" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_64"  Text="0" VerticalAlignment="Center" Margin="766,645,500,83" IsEnabled="False" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_65"  Text="0" VerticalAlignment="Center" Margin="871,645,395,83" IsEnabled="False" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_66"  Text="0" VerticalAlignment="Center" Margin="766,690,500,38" IsEnabled="False" Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_67"  Text="0" VerticalAlignment="Center" Margin="871,688,395,40" IsEnabled="False" Style="{StaticResource textBoxReceita}"/>
+
+
+
+
+
+
+
+
+
+        <!-- TEMPOS -->
+        <Label Content="TEMPOS"   Height="35" Width="186" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="968,80,212,653" FontWeight="Bold"/>
+        <Label Content="Tempo Esteira Transporte.................................."   Height="34" Width="285" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="994,142,87,592"/>
+        <Label Content="Tempo Minimo Mistura Massa.............................."   Height="36" Width="285" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="996,186,85,546"/>
+        <Label Content="Tempo Limpeza Aditivo 3........................................."   Height="36" Width="285" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="998,230,83,502"/>
+        <Label Content="Corrente Motor Final Ciclo....................................."   Height="34" Width="285" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="998,276,83,458"/>
+        <TextBox x:Name="campo_40"  Text="0" VerticalAlignment="Center" Margin="1200,273,66,455"  Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_41"  Text="0" VerticalAlignment="Center" Margin="1200,228,66,500"  Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_42" Text="0" VerticalAlignment="Center" Margin="1200,184,66,544"  Style="{StaticResource textBoxReceita}"/>
+        <TextBox x:Name="campo_43"  Text="0" VerticalAlignment="Center" Margin="1200,139,66,589"  Style="{StaticResource textBoxReceita}"/>
+
+
+
+
+
+
+
+        <!-- BOX AGUA -->
+        <Label Content="Preset"   Height="30" Width="65" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="187,111,1114,627"/>
+        <Label Content="Tolerância"   Height="35" Width="67" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="290,108,1009,625"/>
+        <Label Content="Supervisão"   Height="35" Width="67" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="398,109,901,624" RenderTransformOrigin="0.07,0.648"/>
+
+        <!-- BOX CIMENTO -->
+
+        <!-- BOX ADITIVOS -->
+        <Label Content="Preset"   Height="35" Width="62" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="677,104,627,629"/>
+        <Label Content="Tolerância"   Height="35" Width="67" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="783,104,516,629"/>
+        <Label Content="Supervisão"   Height="35" Width="69" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="888,104,409,629"/>
+
+        <!-- BOX SILOS -->
+
+        <!-- BOX TEMPO -->
+        <Label Content="Preset"   Height="35" Width="62" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="1222,92,82,641"/>
+
+
+
+        <!-- Label de Alarmes -->
+        <Label x:Name="idAlarme" Content="- - - -" Height="32" Width="1366" VerticalContentAlignment="Center"
+               HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"
+               FontFamily="Trebuchet MS" FontSize="26" Background="YellowGreen" Foreground="#FFFDFDFD" Opacity="0.8" Margin="0,735,0,1"/>
+        <TextBox Name="data" HorizontalAlignment="Left" Height="29" Margin="1286,0,0,0" Text="01/01/2018" VerticalAlignment="Bottom" Width="80"
+                 HorizontalContentAlignment="Center" VerticalContentAlignment="Top" FontFamily="Trebuchet MS" Foreground="Black"
+                 Background="YellowGreen" FontSize="12" Padding="0" BorderThickness="1,0" IsReadOnly="True"/>
+
+
+
+
+        <!-- Bt Eviar Receita CLP -->
+        <Button x:Name="btEnviarReceita" Content="PC -> CLP"
+                FontFamily="Trebuchet MS" FontSize="24" IsEnabled="true"
+                Margin="1222,677,28,56"  RenderTransformOrigin="0.5,0.457">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" SpreadMethod="Reflect">
+                    <GradientStop Color="{DynamicResource {x:Static SystemColors.MenuHighlightColorKey}}" Offset="1"/>
+                    <GradientStop Color="{DynamicResource {x:Static SystemColors.GradientActiveCaptionColorKey}}" Offset="0.508"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <!-- Bt Recebe Receita CLP -->
+        <Button x:Name="btRecebeReceita" Content="CLP -> PC"
+                FontFamily="Trebuchet MS" FontSize="24" IsEnabled="true"
+                Margin="1222,637,28,96" RenderTransformOrigin="0.603,1.2">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" SpreadMethod="Reflect">
+                    <GradientStop Color="{DynamicResource {x:Static SystemColors.MenuHighlightColorKey}}" Offset="1"/>
+                    <GradientStop Color="{DynamicResource {x:Static SystemColors.GradientActiveCaptionColorKey}}" Offset="0.508"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+        <!-- Bt Salvar Receita -->
+        <Button x:Name="btSalvarReceita" Content="Salvar"
+                FontFamily="Trebuchet MS" FontSize="14" IsEnabled="true"
+                Margin="993,637,273,103"  RenderTransformOrigin="0.5,0.457">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" SpreadMethod="Reflect">
+                    <GradientStop Color="{DynamicResource {x:Static SystemColors.MenuHighlightColorKey}}" Offset="1"/>
+                    <GradientStop Color="{DynamicResource {x:Static SystemColors.GradientActiveCaptionColorKey}}" Offset="0.508"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <!-- Bt Consultar Receita -->
+        <Button x:Name="btConsultarReceita" Content="Consultar"
+                FontFamily="Trebuchet MS" FontSize="14" IsEnabled="true"
+                Margin="1098,637,168,103"  RenderTransformOrigin="0.5,0.457">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" SpreadMethod="Reflect">
+                    <GradientStop Color="{DynamicResource {x:Static SystemColors.MenuHighlightColorKey}}" Offset="1"/>
+                    <GradientStop Color="{DynamicResource {x:Static SystemColors.GradientActiveCaptionColorKey}}" Offset="0.508"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+        <!-- Bt Excluir Receita -->
+        <Button x:Name="btExcluirReceita" Content="Excluir"
+                FontFamily="Trebuchet MS" FontSize="14" IsEnabled="true"
+                Margin="993,677,168,56"  RenderTransformOrigin="0.5,0.457">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" SpreadMethod="Reflect">
+                    <GradientStop Color="Red" Offset="1"/>
+                    <GradientStop Color="Coral" Offset="0.508"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+
+
+        <!-- Receita -->
+        <TextBox x:Name="campoReceita"   Margin="993,586,28,146" IsEnabled="True" Height="36" FontSize="20" Background="#FFA3E2FF" >
+            <TextBox.Effect>
+                <DropShadowEffect BlurRadius="1" ShadowDepth="1" Direction="300" Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+            </TextBox.Effect>
+        </TextBox>
+        <Label Content="Nome da receita"   Height="35" Width="345" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="993,557,28,176"/>
+
+
+        <!-- Receitas salvas -->
+        <DataGrid x:Name="dataGridUsuarios" HorizontalAlignment="Center" Height="222" Margin="993,330,28,216" VerticalAlignment="Center" Width="345" MaxColumnWidth="330" FontFamily="Trebuchet MS" FontSize="20" Background="#FFA4E2F7" 
+                  ItemsSource="{Binding}" AutoGenerateColumns="False" AlternatingRowBackground="White" CanUserReorderColumns="False" CanUserResizeColumns="False" CanUserSortColumns="False" 
+                  BorderBrush="LightGray" BorderThickness="1" Foreground="#FF085562">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding campoReceita}" ClipboardContentBinding="{x:Null}" Header="Receitas salvas" Width="330" CanUserResize="False" FontSize="16" FontFamily="Trebuchet MS" IsReadOnly="True"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Separador -->
+        <Rectangle Fill="LightBlue" HorizontalAlignment="Center" Height="661" Stroke="LightBlue" VerticalAlignment="Center" Width="6" Margin="497,74,863,33"/>
+        <Rectangle Fill="LightBlue" HorizontalAlignment="Center" Height="661" Stroke="LightBlue" VerticalAlignment="Center" Width="6" Margin="980,74,380,33"/>
+
+
+
+        <!-- logo NIAI -->
+        <Image HorizontalAlignment="Left" Height="53" Margin="10,10,0,0" VerticalAlignment="Top" Width="61" Source="/usinaConcreto;component/Img/logoNiai.png"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </Grid>
+</Window>
